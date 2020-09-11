@@ -1,0 +1,55 @@
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+img {
+	max-width: 100%;
+}
+
+.main-component {
+	max-width: 600px;
+}
+
+.profile__image {
+	background: url('/images/pattern-bg.svg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 350px;
+	position: relative;
+}
+
+.profile__image>img {
+	display: block;
+	margin: auto;
+	width: 250px;
+}
+
+/* Arrows */
+
+.arrows {
+	position: absolute;
+	bottom: 10%;
+	padding: 10px;
+}
+
+.arrows .btn, .arrows {
+	background: #fff;
+}
+
+.arrows .btn {
+	border: none;
+	outline: none;
+}
+
+.btn__next {
+	margin-right: 10px;
+}

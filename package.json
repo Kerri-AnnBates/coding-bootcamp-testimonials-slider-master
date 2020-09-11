@@ -4,7 +4,8 @@
   "description": "![Design preview for the Coding Bootcamp Testimonials Slider coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Kerri-AnnBates/coding-bootcamp-testimonials-slider-master/issues"
   },
-  "homepage": "https://github.com/Kerri-AnnBates/coding-bootcamp-testimonials-slider-master#readme"
+  "homepage": "https://github.com/Kerri-AnnBates/coding-bootcamp-testimonials-slider-master#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10"
+  }
 }
