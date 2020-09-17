@@ -7,12 +7,21 @@
 	color: hsl(228, 45%, 44%);
 }
 
+body {
+	font-family: 'Inter', sans-serif;
+}
+
 img {
 	max-width: 100%;
 }
 
 .main-component {
-	max-width: 600px;
+	max-width: 400px;
+}
+
+.profile {
+	padding: 20px;
+	text-align: center;
 }
 
 .profile__image {
@@ -27,7 +36,7 @@ img {
 	position: relative;
 }
 
-.profile__image>img {
+.profile__image .img-wrapper {
 	display: block;
 	margin: auto;
 	width: 250px;
@@ -39,6 +48,7 @@ img {
 	position: absolute;
 	bottom: 10%;
 	padding: 10px;
+	border-radius: 50px;
 }
 
 .arrows .btn, .arrows {
@@ -52,4 +62,25 @@ img {
 
 .btn__next {
 	margin-right: 10px;
+}
+
+/* Profile Content */
+
+.profile__content {
+	color: #202046;
+	line-height: 1.5;
+	font-weight: 300;
+	font-size: 1.125rem;
+}
+
+.author {
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.author-title {
+	font-size: 0.9375rem;
+	font-weight: 400;
+	color: #BABACF;
+	display: block;
 }
