@@ -23,10 +23,16 @@ img {
 .profile {
 	padding: 20px;
 	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.curve {
+	width: 80%;
 }
 
 .profile__image {
-	background: url('/images/pattern-bg.svg');
+	background: url('../images/pattern-bg.svg');
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -86,18 +92,13 @@ img {
 	font-weight: 300;
 	font-size: 1.125rem;
 	position: relative;
-	margin-top: 80px;
+	margin-top: 55px;
 }
 
 .quotes {
-	background: url(../images/pattern-quotes.svg);
-	background-repeat: no-repeat;
-	content: "";
-	display: inline-block;
-	height: 120px;
-	width: 120px;
 	position: absolute;
-	top: -50px;
+	width: 70px;
+	top: -30px;
 	left: 50%;
 	transform: translateX(-50%);
 }
