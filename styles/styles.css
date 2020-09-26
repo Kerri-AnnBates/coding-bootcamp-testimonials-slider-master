@@ -15,16 +15,23 @@ img {
 	max-width: 100%;
 }
 
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 .main-component {
 	max-width: 400px;
 	margin: auto;
+	overflow: hidden;
+	position: relative;
 }
 
 .profile {
 	padding: 20px;
 	text-align: center;
 	position: relative;
-	overflow: hidden;
 }
 
 .curve {
@@ -128,3 +135,37 @@ img {
 }
 
 /* Responsive */
+
+@media(min-width: 700px) {
+	.main-component {
+		max-width: 700px;
+	}
+	.curve {
+		width: 50%;
+		position: absolute;
+		bottom: 0;
+	}
+	/* Positioning */
+	.position-rt {
+		float: right;
+		width: 50%;
+	}
+	.position-lt {
+		position: absolute;
+		width: 60%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	/* Profile */
+	.profile {
+		text-align: left;
+		padding: 30px 20px;
+	}
+	.quotes {
+		transform: translateX(0);
+		left: 15%;
+	}
+	.profile__content {
+		margin-top: 0;
+	}
+}
