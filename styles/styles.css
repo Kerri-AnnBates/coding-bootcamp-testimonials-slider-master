@@ -64,6 +64,10 @@ img {
 
 /* Arrows */
 
+.btn:hover {
+	cursor: pointer;
+}
+
 .arrows {
 	position: absolute;
 	bottom: 10%;
@@ -122,3 +126,5 @@ img {
 .profile__content__text.active {
 	display: block;
 }
+
+/* Responsive */
