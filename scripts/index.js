@@ -3,44 +3,43 @@ const prevButton = document.querySelector(".btn__prev");
 const imageList = document.querySelector(".profile__image-list");
 const contentList = document.querySelector(".profile__content-list");
 
-
-console.log(imageList.children);
 // Flag set to 0
-let imgIndex = 0;
+let profileIndex = 0;
 
 nextButton.addEventListener("click", () => {
-	let image = imageList.children[imgIndex];
-	image.classList.remove("active");
+	let image = imageList.children[profileIndex];
+	let content = contentList.children[profileIndex];
 
-	if (imgIndex === imageList.children.length - 1) {
-		imgIndex = 0;
+	image.classList.remove("active");
+	content.classList.remove("active");
+
+	if (profileIndex === imageList.children.length - 1) {
+		profileIndex = 0;
 	} else {
-		imgIndex += 1;
+		profileIndex += 1;
 	}
 
-	image = imageList.children[imgIndex];
+	image = imageList.children[profileIndex];
+	content = contentList.children[profileIndex];
 	image.classList.add("active");
+	content.classList.add("active");
 });
 
 prevButton.addEventListener("click", () => {
-	let image = imageList.children[imgIndex];
-	image.classList.remove("active");
+	let image = imageList.children[profileIndex];
+	let content = contentList.children[profileIndex];
 
-	if (imgIndex === 0) {
-		imgIndex = imageList.children.length - 1;
+	image.classList.remove("active");
+	content.classList.remove("active");
+
+	if (profileIndex === 0) {
+		profileIndex = imageList.children.length - 1;
 	} else {
-		imgIndex -= 1;
+		profileIndex -= 1;
 	}
 
-	image = imageList.children[imgIndex];
+	image = imageList.children[profileIndex];
+	content = contentList.children[profileIndex];
 	image.classList.add("active");
+	content.classList.add("active");
 });
-
-// On next click, get the image at image[flag]. 
-// Remove show class from current image.
-// Check if te flag is === to the length-1
-	// if it is set flage to 0
-	// Add show class to image[flag]
-// else
-	// Increase flag by 1.
-	// Add show class to image[flag]
