@@ -90,24 +90,30 @@ img {
 .arrows {
 	position: absolute;
 	bottom: 10%;
-	padding: 10px;
-	border-radius: 50px;
+	border-radius: 50%;
 	-webkit-box-shadow: 6px 6px 15px -10px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 6px 6px 15px -10px rgba(0, 0, 0, 0.75);
 	box-shadow: 6px 6px 15px -10px rgba(0, 0, 0, 0.75);
 }
 
-.arrows .btn, .arrows {
-	background: #fff;
-}
-
 .arrows .btn {
 	border: none;
 	outline: none;
+	padding: 12px;
+	width: 50px;
 }
 
 .btn__prev {
-	margin-right: 10px;
+	border-radius: 50px 0 0 50px;
+	margin-right: -5px;
+}
+
+.btn__next {
+	border-radius: 0 50px 50px 0;
+}
+
+.arrows .btn:hover {
+	background-color: #ccc;
 }
 
 /* Profile Content */
