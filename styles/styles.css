@@ -16,6 +16,7 @@
 body {
 	font-family: 'Inter', sans-serif;
 	background-color: #F0F0F0;
+	padding: 20px;
 }
 
 img {
@@ -89,6 +90,9 @@ img {
 	bottom: 10%;
 	padding: 10px;
 	border-radius: 50px;
+	-webkit-box-shadow: 6px 6px 15px -10px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 6px 6px 15px -10px rgba(0, 0, 0, 0.75);
+	box-shadow: 6px 6px 15px -10px rgba(0, 0, 0, 0.75);
 }
 
 .arrows .btn, .arrows {
@@ -176,6 +180,9 @@ footer {
 		transform: translateY(-50%);
 	}
 	/* Profile */
+	.arrows {
+		left: 20%;
+	}
 	.profile {
 		text-align: left;
 		padding: 30px 20px;
