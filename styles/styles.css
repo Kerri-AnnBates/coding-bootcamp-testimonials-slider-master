@@ -1,3 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
@@ -9,6 +15,7 @@
 
 body {
 	font-family: 'Inter', sans-serif;
+	background-color: #F0F0F0;
 }
 
 img {
@@ -23,9 +30,10 @@ img {
 
 .main-component {
 	max-width: 400px;
-	margin: auto;
+	margin: 50px auto 0;
 	overflow: hidden;
 	position: relative;
+	background-color: #fff;
 }
 
 .profile {
@@ -134,6 +142,14 @@ img {
 .profile__content__text.active {
 	display: block;
 	opacity: 1;
+}
+
+/* Footer */
+
+footer {
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
 }
 
 /* Responsive */
