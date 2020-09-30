@@ -70,13 +70,15 @@ img {
 }
 
 .profile-image {
-	display: none;
+	transform: translateX(-100%);
+	position: absolute;
+	transition: all 700ms ease;
 	opacity: 0;
 }
 
 .profile-image.active {
-	display: block;
 	opacity: 1;
+	transform: translateX(0);
 }
 
 /* Arrows */
@@ -140,12 +142,14 @@ img {
 }
 
 .profile__content__text {
-	display: none;
+	height: 0;
 	opacity: 0;
+	overflow: hidden;
+	transition: all 700ms ease;
 }
 
 .profile__content__text.active {
-	display: block;
+	height: auto;
 	opacity: 1;
 }
 
