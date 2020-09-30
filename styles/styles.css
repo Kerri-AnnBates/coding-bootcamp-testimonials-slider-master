@@ -72,7 +72,7 @@ img {
 .profile-image {
 	transform: translateX(-100%);
 	position: absolute;
-	transition: all 700ms ease;
+	transition: all 800ms ease;
 	opacity: 0;
 }
 
@@ -145,7 +145,7 @@ img {
 	height: 0;
 	opacity: 0;
 	overflow: hidden;
-	transition: all 700ms ease;
+	transition: all 800ms ease;
 }
 
 .profile__content__text.active {
