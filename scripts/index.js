@@ -7,10 +7,30 @@ const contentList = document.querySelector(".profile__content-list");
 let profileIndex = 0;
 
 nextButton.addEventListener("click", () => {
-	let image = imageList.children[profileIndex];
+	let currentImage, prevImage, nextImage;
 	let content = contentList.children[profileIndex];
 
-	image.classList.remove("active");
+	currentImage = imageList.children[profileIndex];
+
+	// check if at end or beg of array to reset classes
+	if (profileIndex == 0 || profileIndex == imageList.children.length - 1) {
+		if (profileIndex == 0) {
+			prevImage = imageList.children[imageList.children.length - 1];
+			nextImage = imageList.children[profileIndex + 1];
+
+		} else {
+			prevImage = imageList.children[profileIndex - 1];
+			nextImage = imageList.children[profileIndex];
+		}
+
+	} else {
+		prevImage = imageList.children[profileIndex - 1];
+		nextImage = imageList.children[profileIndex + 1];
+	}
+
+	currentImage.classList.remove("active", "slide-left", "slide-right");
+	prevImage.classList.remove("active", "slide-left", "slide-right");
+	nextImage.classList.remove("active", "slide-left", "slide-right");
 	content.classList.remove("active");
 
 	if (profileIndex === imageList.children.length - 1) {
@@ -19,9 +39,27 @@ nextButton.addEventListener("click", () => {
 		profileIndex += 1;
 	}
 
-	image = imageList.children[profileIndex];
+	// check if at end or beg of array to add classes
+	if (profileIndex == 0 || profileIndex == imageList.children.length - 1) {
+		if (profileIndex == 0) {
+			prevImage = imageList.children[imageList.children.length - 1];
+			nextImage = imageList.children[profileIndex + 1];
+
+		} else {
+			prevImage = imageList.children[profileIndex - 1];
+			nextImage = imageList.children[profileIndex];
+		}
+
+	} else {
+		prevImage = imageList.children[profileIndex - 1];
+		nextImage = imageList.children[profileIndex + 1];
+	}
+
+
+	currentImage = imageList.children[profileIndex];
 	content = contentList.children[profileIndex];
-	image.classList.add("active");
+	currentImage.classList.add("active");
+	prevImage.classList.add("slide-left");
 	content.classList.add("active");
 });
 

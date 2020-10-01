@@ -71,7 +71,7 @@ img {
 
 .profile-image {
 	position: absolute;
-	left: -100%;
+	left: 100%;
 	transition: all 800ms ease;
 	opacity: 0;
 }
@@ -79,6 +79,14 @@ img {
 .profile-image.active {
 	opacity: 1;
 	left: 0;
+}
+
+.profile-image.slide-left {
+	left: -100%;
+}
+
+.profile-image.slide-right {
+	left: 100%;
 }
 
 /* Arrows */
@@ -97,6 +105,7 @@ img {
 }
 
 .arrows .btn {
+	background-color: #fff;
 	border: none;
 	outline: none;
 	padding: 12px;
