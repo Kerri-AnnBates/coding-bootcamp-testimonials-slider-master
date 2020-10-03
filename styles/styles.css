@@ -71,7 +71,6 @@ img {
 
 .profile-image {
 	position: absolute;
-	/* left: 100%; */
 	transition: all 800ms ease;
 	opacity: 0;
 }
