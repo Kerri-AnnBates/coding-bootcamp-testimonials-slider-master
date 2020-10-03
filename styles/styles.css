@@ -78,16 +78,16 @@ img {
 
 .profile-image.active {
 	opacity: 1;
-	/* left: 0; */
+	left: 0;
 }
 
-/* .profile-image.slide-left {
+.profile-image.slide-left {
 	left: -100%;
 }
 
 .profile-image.slide-right {
 	left: 100%;
-} */
+}
 
 /* Arrows */
 
