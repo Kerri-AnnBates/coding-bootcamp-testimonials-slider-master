@@ -1,3 +1,5 @@
+## My version of this challenge can be found at - (https://testimonial-component.netlify.app/)
+
 # Frontend Mentor - Coding Bootcamp Testimonials Slider
 
 ![Design preview for the Coding Bootcamp Testimonials Slider coding challenge](./design/desktop-preview.jpg)
